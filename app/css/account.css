@@ -1,0 +1,148 @@
+#login {
+	position: relative;
+}
+
+#login #panel {
+	display: none;
+}
+
+#login img {
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#login #triangle {
+	position: absolute;
+	top: -5px;
+	right: 15px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #DDD;
+}
+
+#login #content {
+	position: absolute;
+	top: 20px;
+	right: 0px;
+
+	font-size: 1.1em;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+
+	background-color: rgb(170, 170, 170);
+	background-image: linear-gradient(to bottom,rgba(255,255,255,0.7) 0,rgba(255,255,255,0) 100%);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255,255,255,0.7)),color-stop(100%,rgba(255,255,255,0)));
+	line-height: normal;
+	padding: 5px;
+}
+
+#login #content #track {
+	border-right: 1px solid gray;
+	padding-right: 2px;
+	min-width: 160px;
+}
+
+#login #content #track .tracking-clone {
+	border: 2px solid #888;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+	opacity: .4;
+    transition: all 0.2s ease;
+
+	margin-bottom: 2px;
+}
+
+#login #content #track .tracking-clone:hover {
+	border-color: #555;
+    opacity: 1;
+}
+
+#login #content #track .tracking-clone.active {
+	border-color: darkorange;
+    opacity: 1;
+}
+
+#login #content table {
+	text-align: right;
+	width: 100%;
+}
+
+#login #content table th {
+	text-align: right;
+	color: #444;
+	padding-right: 5px;
+}
+
+#login #content table td {
+	color: #555;
+	text-align: left;
+}
+
+#login #content table .text {
+	padding: 0 10px 0 3px;
+	white-space: nowrap;
+}
+
+#login #content .avatar {
+	height: 1px;
+	width: 1px;
+}
+
+#login #content table td #logout {
+	float: right;
+}
+
+#login #content a {
+	color: #666;
+}
+
+#login #content #error {
+	color: #FF4747;
+}
+
+#logo {
+	color: #CCC;
+}
+
+#logo > span > div > canvas {
+	vertical-align: middle;
+}
+
+#login #error {
+	font-weight: bold;
+	text-align: center;
+}
+
+#link, #account {
+	white-space: nowrap;
+	color: #666;
+}
+
+#link {
+	vertical-align: top;
+}
+
+#login #logoutTable tbody th {
+	text-align: center;
+	color: #CCC;
+	background: #555;
+}
+
+#logoutTable tbody tr td {
+	vertical-align: top;
+}
+
+#tracking {
+	display: block;
+	overflow-y: auto;
+	max-height: 332px;
+}

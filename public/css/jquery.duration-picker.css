@@ -1,0 +1,57 @@
+.bdp-input {
+    border-radius: 2px;
+    padding: 0 3px;
+    display: inline-block;
+    font-size: 1.3em;
+}
+
+.bdp-input.disabled {
+    color: #AAA;
+    cursor: default;
+}
+
+.bdp-popover {
+    min-width: 110px;
+}
+
+.bdp-popover input {
+    display: inline-block;
+    margin-bottom: 3px;
+    width: 60px;
+}
+
+.bdp-block {
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+    padding: 0px 3px;
+    cursor: pointer;
+}
+
+.bdp-label {
+    font-size: 70%;
+}
+
+.bdp-block br {
+    display: none;
+}
+
+.bdp-input .bdp-block a {
+    width: 10px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+.bdp-input .bdp-block a:hover {
+    text-decoration: none;
+    color: #333;
+    cursor: default;
+}
+
+.bdp-input .bdp-block a:focus {
+    /*outline: none;*/
+}

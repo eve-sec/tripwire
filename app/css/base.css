@@ -1,0 +1,233 @@
+@font-face {
+	font-family: 'lucida';
+	src:url('../fonts/lucida.ttf?w81bs6') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+html {
+    font-size: .6em;
+    font-family: Verdana, 'Helvetica Neue', Arial, sans-serif;
+    color: #888;
+    line-height: 1.1;
+    min-height: 100%;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #CCC;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #FFF;
+}
+
+i {
+	cursor: pointer;
+}
+
+i.disabled {
+	opacity: .4;
+	cursor: default;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.hidden {
+	display: none;
+}
+
+.align-left {
+	float: left;
+}
+
+.align-right {
+	float: right;
+}
+
+.pointer {
+	cursor: default;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.active {
+	color: orange;
+}
+
+.wh {
+	color: #4399F0;
+}
+
+.hisec, .stable {
+	color: #50D25A;
+}
+
+.lowsec, .destab {
+	color: #F5B544;
+}
+
+.nullsec, .critical {
+	color: #FF4747;
+}
+
+.jumps {
+	color: #3366CC;
+}
+
+.pods {
+	color: #DC3912;
+}
+
+.ships {
+	color: #FF9900;
+}
+
+.npcs {
+	color: #109618;
+}
+
+.thermal-icon {
+	content: url("../images/th.png");
+	height: 16px;
+}
+
+.kinetic-icon {
+	content: url("../images/kn.png");
+	height: 16px;
+}
+
+.explosive-icon {
+	content: url("../images/exp.png");
+	height: 16px;
+}
+
+.em-icon {
+	content: url("../images/em.png");
+	height: 16px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    height: 2em;
+    display: none;
+    background-color: black;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #3b3b3b;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #666;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #999;
+}
+
+::-webkit-scrollbar-corner {
+	background-color: transparent;
+}
+/* ---------- */
+
+::-webkit-input-placeholder {
+   color: #888;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #888;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #888;
+}
+
+:-ms-input-placeholder {
+   color: #888;
+}
+
+@-webkit-keyframes spin {
+from { -webkit-transform: rotate(0deg); }
+to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+from { -moz-transform: rotate(0deg); }
+to { -moz-transform: rotate(360deg); }
+}
+
+@-o-keyframes spin {
+from { -o-transform: rotate(0deg); }
+to { -o-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+.transition {
+	/* -webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	transition: 0.3s all ease-out;
+	-webkit-transition: 0.3s all ease-out;
+	-moz-transition: 0.3s all ease-out;
+	-ms-transition: 0.3s all ease-out;
+	-o-transition: 0.3s all ease-out; */
+}
+
+.scale {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	transform: scale(0.9);
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	-o-transform: scale(0.9);
+
+	overflow: hidden;
+}
+
+.blur {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	-ms-filter: blur(1px);
+	-o-filter: blur(1px);
+	filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='1');
+}

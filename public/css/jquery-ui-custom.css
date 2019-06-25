@@ -1,0 +1,176 @@
+.ui-widget {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1.1em;
+}
+
+.ui-widget input {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1em;
+}
+
+.ui-widget-content {
+    border: 1px solid #404040;
+}
+
+.ui-widget.ui-widget-content {
+    border: none;
+}
+
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:hover .ui-icon, .ui-button:focus .ui-icon, .ui-state-active .ui-icon {
+    background-image: url("images/ui-icons_c98000_256x240.png");
+}
+
+.ui-widget-content .ui-accordion-header-active {
+    border: 1px solid #000;
+    background: #121212 url("images/ui-bg_inset-soft_15_121212_1x100.png") 50% 50% repeat-x;
+    font-weight: normal;
+    color: #fff;
+}
+
+.ui-selectmenu-text {
+    padding-top: 1px;
+}
+
+.ui-widget.ui-button.ui-selectmenu-button {
+    padding: 1px 5px;
+    margin: -2px 0;
+}
+
+/** Menu Styling **/
+.ui-menu {
+	padding: 2px;
+	background: rgba(229, 229, 229, 1);
+	background-image: none;
+
+	min-width: 7em;
+	color: #333;
+
+	border: none;
+    border-radius: 3px;
+}
+
+.ui-menu li.ui-menu-item {
+    padding: 0;
+    line-height: 1.5;
+	min-height: 0;
+}
+
+.ui-menu-item .ui-menu-item-wrapper {
+    border: none;
+    background: none;
+    padding: 2px .4em;
+    display: inline-block;
+    width: 100%;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.ui-menu-item .ui-menu-item-wrapper:hover, .ui-menu-item .ui-menu-item-wrapper.ui-state-active {
+    background: #222;
+    color: #aaa;
+}
+
+.ui-menu-item:last-child .ui-menu-item-wrapper:hover, .ui-menu-item:last-child .ui-menu-item-wrapper.ui-state-active {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.ui-menu li.ui-menu-item a {
+	color: #333;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.ui-menu .ui-state-focus, .ui-menu .ui-state-active {
+	margin: 0;
+	color: #aaa;
+}
+
+li.ui-menu-item.ui-state-focus > a, li.ui-menu-item.ui-state-active > a {
+	color: #aaa;
+}
+
+.ui-menu .ui-menu-divider, .ui-menu .ui-state-disabled {
+	margin: 0;
+	text-decoration: none;
+	cursor: default;
+}
+
+.ui-menu-item.ui-state-focus {
+	border: none;
+	background: #222;
+}
+
+.ui-menu-item.ui-state-active {
+	border: none;
+	background: #555;
+}
+/** Menu Styling  **/
+
+/** Dialog Styling **/
+.ui-dialog {
+	color: #555;
+	width: auto;
+	height: auto;
+	overflow: visible;
+
+	border: none;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+
+	background-color: rgba(170, 170, 170, 1);
+	background-image: linear-gradient(to bottom,rgba(255,255,255,0.7) 0,rgba(255,255,255,0) 100%);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255,255,255,0.7)),color-stop(100%,rgba(255,255,255,0)));
+}
+
+.ui-widget-overlay {
+	background: none;
+}
+
+.ui-dialog .ui-dialog-title {
+    padding-bottom: 3px;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+	background: none;
+	border: none;
+	color: #444;
+}
+
+.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+	background: none;
+	border: none;
+
+	width: 20px;
+	margin: -10px 0 0 0;
+	padding: 1px;
+}
+
+.ui-dialog .ui-dialog-content {
+	color: #555;
+	overflow: visible;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+	background: none;
+	border: none;
+	margin: 0;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+	margin: 0.4em 0em 0.4em 0.4em;
+}
+
+.ui-dialog .ui-button-text {
+	padding: 0;
+}
+
+.ui-dialog-shadow {
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+/** Dialog Styling **/

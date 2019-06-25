@@ -1,0 +1,91 @@
+.cke .cke_button__source_label {
+	display: none;
+}
+
+.cke .cke_maximized {
+	background: black;
+}
+
+.comment {
+	border-bottom: 1px solid #444;
+}
+
+.commentSticky {
+	padding-left: 3px;
+}
+
+.commentToolbar .commentControls::before {
+	display: inline-block;
+	content: '';
+	height: 100%;
+	vertical-align: bottom;
+}
+
+.commentToolbar, .commentFooter {
+	font-size: .9em;
+	color: #999;
+}
+
+.commentToolbar {
+	height: 26px;
+}
+
+.commentFooter {
+	padding: 3px;
+}
+
+.commentControls {
+	float: right;
+	height: 100%;
+}
+
+.commentStatus, .commentTitle {
+	float: left;
+	height: 100%;
+}
+
+.commentModified {
+	display: block;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	opacity: 0;
+
+	transition: opacity .25s ease-out;
+	-moz-transition: opacity .25s ease-out;
+	-webkit-transition: opacity .25s ease-out;
+	-o-transition: opacity .25s ease-out;
+}
+
+.commentToolbar .commentControls, .commentSticky {
+	opacity: 0;
+
+	transition: opacity .25s ease-out;
+	-moz-transition: opacity .25s ease-out;
+	-webkit-transition: opacity .25s ease-out;
+	-o-transition: opacity .25s ease-out;
+}
+
+.comment:hover .commentControls, .comment:hover .commentModified, .comment:hover .commentSticky, .commentSticky.active {
+	opacity: 1;
+}
+
+.commentBody {
+	color: #ccc;
+	padding: 8px;
+	//white-space: pre-wrap;      /* CSS3 */
+	//white-space: -moz-pre-wrap; /* Firefox */
+	//white-space: -pre-wrap;     /* Opera <7 */
+	//white-space: -o-pre-wrap;   /* Opera 7 */
+	word-wrap: break-word;      /* IE */
+}
+
+.commentBody a {
+	color: darkorange;
+}
+
+.commentBody ol, .commentBody ul, .commentBody dl {
+	/* IE7: reset rtl list margin. (#7334) */
+	*margin-right: 0px;
+	/* preserved spaces for list items with text direction other than the list. (#6249,#8049)*/
+	padding: 0 40px;
+}

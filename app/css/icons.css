@@ -1,0 +1,190 @@
+@font-face {
+	font-family: 'icon';
+	src:url('../fonts/icon.eot?w81bs6');
+	src:url('../fonts/icon.eot?#iefixw81bs6') format('embedded-opentype'),
+		url('../fonts/icon.woff?w81bs6') format('woff'),
+		url('../fonts/icon.ttf?w81bs6') format('truetype'),
+		url('../fonts/icon.svg?w81bs6#icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon] {
+	font-family: 'icon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[data-icon]:hover {
+	text-decoration: none;
+}
+
+[data-icon="undo"]:before {
+	content: "\e60e";
+}
+[data-icon="redo"]:before {
+	content: "\e612";
+}
+[data-icon="move-horizontal"]:before {
+	content: "\e600";
+}
+[data-icon="move-vertical"]:before {
+	content: "\e601";
+}
+[data-icon="tripwire-logo"]:before {
+	content: "\e602";
+}
+[data-icon="edit"]:before {
+	content: "\e609";
+}
+[data-icon="pin"]:before {
+	content: "\e60a";
+}
+[data-icon="plus-circle"]:before {
+	content: "\e60b";
+}
+[data-icon="minus-circle"]:before {
+	content: "\e60c";
+}
+[data-icon="times-circle"]:before {
+	content: "\e60d";
+}
+[data-icon="check"]:before {
+	content: "\f00c";
+}
+[data-icon="times"]:before {
+	content: "\f00d";
+}
+[data-icon="plus"]:before {
+	content: "\f067";
+}
+[data-icon="minus"]:before {
+	content: "\f068";
+}
+[data-icon="eye"]:before {
+	content: "\e000";
+}
+[data-icon="pulsar"]:before {
+	content: "\e001";
+}
+[data-icon="connection"]:before {
+	content: "\e002";
+}
+[data-icon="settings"]:before {
+	content: "\e003";
+}
+[data-icon="magnetar"]:before {
+	content: "\e004";
+}
+[data-icon="wolf-rayet"]:before {
+	content: "\e005";
+}
+[data-icon="portrait"]:before {
+	content: "\e006";
+}
+[data-icon="landscape"]:before {
+	content: "\e007";
+}
+[data-icon="erase"]:before {
+	content: "\e008";
+}
+[data-icon="lock-open"]:before {
+	content: "\e009";
+}
+[data-icon="lock"]:before {
+	content: "\e00a";
+}
+[data-icon="user"]:before {
+	content: "\e00b";
+}
+[data-icon="red-giant"]:before {
+	content: "\e00c";
+}
+[data-icon="search"]:before {
+	content: "\e00d";
+}
+[data-icon="star-empty"]:before {
+	content: "\e00e";
+}
+[data-icon="star"]:before {
+	content: "\e00f";
+}
+[data-icon="blackhole"]:before {
+	content: "\e010";
+}
+[data-icon="fullscreen"]:before {
+	content: "\e011";
+}
+[data-icon="fullscreen-exit"]:before {
+	content: "\e012";
+}
+[data-icon="home"]:before {
+	content: "\e013";
+}
+[data-icon="key"]:before {
+	content: "\e014";
+}
+[data-icon="alert"]:before {
+	content: "\e015";
+}
+[data-icon="help"]:before {
+	content: "\e016";
+}
+[data-icon="resize"]:before {
+	content: "\e017";
+}
+[data-icon="info"]:before {
+	content: "\e018";
+}
+[data-icon="tree"]:before {
+	content: "\e019";
+}
+[data-icon="follow"]:before {
+	content: "\e60f";
+}
+[data-icon="viewing"]:before {
+	content: "\e610";
+}
+[data-icon="cataclysmic-variable"]:before {
+	content: "\e611";
+}
+[data-icon="layout"]:before {
+	content: "\e603";
+}
+[data-icon="auto"]:before {
+	content: "\e604";
+}
+[data-icon="check-on"]:before {
+	content: "\e605";
+}
+[data-icon="check-off"]:before {
+	content: "\e606";
+}
+[data-icon="radio-off"]:before {
+	content: "\e607";
+}
+[data-icon="radio-on"]:before {
+	content: "\e608";
+}
+[data-icon="trash"]:before {
+	content: "\e9ad";
+	vertical-align: text-top;
+}
+[data-icon="sort"]:before {
+	content: "\f0dc";
+}
+[data-icon="sort-desc"]:before {
+	content: "\f0dd";
+}
+[data-icon="sort-asc"]:before {
+	content: "\f0de";
+}

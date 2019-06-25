@@ -1,0 +1,418 @@
+#chainMap {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+
+	/* No support for these yet, use at own risk */
+	-o-user-select: none;
+	user-select: none;
+}
+
+#chainMap .google-visualization-orgchart-table * {
+	padding: 0px;
+}
+
+#chainMap .google-visualization-orgchart-table {
+	padding: 0 5px;
+	padding-right: 0px;
+	width: 1px;
+	margin: 0 auto;
+}
+
+#chainMap td.node {
+	height: 30px;
+	min-width: 5em;
+	white-space: nowrap;
+	text-align: center;
+	vertical-align: middle;
+	font-family: verdana;
+	font-size: 1em;
+	cursor: default;
+	border: 2px solid #333;
+	line-height: 1;
+
+    border-top-left-radius: 15px 50px;
+    border-top-right-radius: 15px 50px;
+	border-bottom-left-radius: 15px 50px;
+    border-bottom-right-radius: 15px 50px;
+
+	background-color: #111;
+	background: linear-gradient(#222, #111);
+
+	box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+#chainMap td.currentNode {
+	border-color: #00286E;
+	background: #001B47;
+
+	background: -moz-linear-gradient(top, #001B47 0%, #00286E 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#001B47), to(#00286E));
+}
+
+#chainMap td.redNode {
+	border-color: #810;
+	background: #610;
+
+	background: -moz-linear-gradient(top, #610 0%, #810 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#610), to(#810));
+}
+
+#chainMap td.yellowNode {
+	border-color: #8A4117;
+	background: #80370D;
+
+	background: -moz-linear-gradient(top, #80370D 0%, #8A4117 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#80370D), to(#8A4117));
+}
+
+#chainMap td.greenNode {
+	border-color: #040;
+	background: #030;
+
+	background: -moz-linear-gradient(top, #030 0%, #040 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#030), to(#040));
+}
+
+#chainMap td.node a {
+	font-weight: normal;
+}
+
+#chainMap span.badge {
+	display: inline-block;
+	color: #bbb;
+	background-color: #222;
+	box-shadow: 0px 0px 6px 2px #111;
+	font-family: monospace;
+	padding: 2px 2px;
+	min-width: 8px;
+	font-size: 9px;
+	font-weight: 300;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	border-radius: 10px;
+}
+
+#chainMap .nodeIcons {
+	position: absolute;
+	top: 0.1em;
+	width: 50px;
+	right: 50%;
+	margin-right: -25px;
+}
+
+#chainMap [data-nodeid] {
+	position: relative;
+	text-align: center;
+}
+
+#chainMap [data-nodeid] h4 {
+	font-weight: normal;
+}
+
+#chainMap .nodeType {
+	text-transform: uppercase;
+}
+
+#chainMap .nodeActivity {
+	position: absolute;
+	top: 2.8em;
+	right: 50%;
+	width: 50px;
+	height: 1px;
+	margin-right: -25px;
+}
+
+#chainMap i[data-icon="user"] {
+	padding: 3px;
+	cursor: default;
+}
+
+#chainMap i.whEffect {
+	padding-left: 3px;
+	cursor: default;
+}
+
+#chainMap i.nodeActivity > span {
+	padding: 2px;
+}
+
+#chainMap .left-critical {
+	border-left-color: #FF4747;
+}
+
+#chainMap .right-critical {
+	border-right-color: #FF4747;
+}
+
+#chainMap .bottom-critical {
+	border-bottom-color: #FF4747;
+}
+
+#chainMap .top-critical {
+	border-top-color: #FF4747;
+}
+
+#chainMap .left-destab {
+	border-left-color: #F5B544;
+}
+
+#chainMap .right-destab {
+	border-right-color: #F5B544;
+}
+
+#chainMap .bottom-destab {
+	border-bottom-color: #F5B544;
+}
+
+#chainMap .top-gate {
+	border-top-color: darkgray;
+}
+
+#chainMap .left-gate {
+	border-left-color: darkgray;
+}
+
+#chainMap .right-gate {
+	border-right-color: darkgray;
+}
+
+#chainMap .bottom-gate {
+	border-bottom-color: darkgray;
+}
+
+#chainMap .left-eol {
+	border-style: dashed;
+}
+
+#chainMap .right-eol {
+	border-style: dashed;
+}
+
+#chainMap .bottom-eol {
+	border-style: dashed;
+}
+
+#chainMap .top-eol {
+	border-style: dashed;
+}
+
+#chainMap .top-frig {
+	border-top-color: #50D25A;
+}
+
+#chainMap .left-frig {
+	border-left-color: #50D25A;
+}
+
+#chainMap .right-frig {
+	border-right-color: #50D25A;
+}
+
+#chainMap .bottom-frig {
+	border-bottom-color: #50D25A;
+}
+
+#chainMap .left-eol-frig {
+	border-style: dashed;
+	border-left-color: #50D25A;
+}
+
+#chainMap .right-eol-frig {
+	border-style: dashed;
+	border-right-color: #50D25A;
+}
+
+#chainMap .bottom-eol-frig {
+	border-style: dashed;
+	border-bottom-color: #50D25A;
+}
+
+#chainMap .top-eol-frig {
+	border-style: dashed;
+	border-top-color: #50D25A;
+}
+
+#chainMap .left-eol-critical {
+	border-style: dashed;
+	border-left-color: #FF4747;
+}
+
+#chainMap .right-eol-critical {
+	border-style: dashed;
+	border-right-color: #FF4747;
+}
+
+#chainMap .bottom-eol-critical {
+	border-style: dashed;
+	border-bottom-color: #FF4747;
+}
+
+#chainMap .top-eol-critical {
+	border-style: dashed;
+	border-top-color: #FF4747;
+}
+
+#chainMap .left-eol-destab {
+	border-style: dashed;
+	border-left-color: #F5B544;
+}
+
+#chainMap .right-eol-destab {
+	border-style: dashed;
+	border-right-color: #F5B544;
+}
+
+#chainMap .bottom-eol-destab {
+	border-style: dashed;
+	border-bottom-color: #F5B544;
+}
+
+#chainMap .top-eol-destab {
+	border-style: dashed;
+	border-top-color: #F5B544;
+}
+
+#massTable td:nth-child(1) {
+	min-width: 12em;
+}
+
+#massTable td:nth-child(2) {
+	width: 2em;
+	text-align: center;
+}
+
+#massTable td:nth-child(3) {
+	width: 12em;
+	text-align: center;
+}
+
+#massTable td:nth-child(4) {
+	width: 8em;
+	text-align: right;
+}
+
+#massTable td:nth-child(5) {
+	width: 14em;
+	text-align: right;
+}
+
+.tab {
+	display: inline-block;
+	min-width: 75px;
+	border-bottom: 2px solid #333;
+	cursor: pointer;
+	vertical-align: top;
+	text-align: right;
+}
+
+.tab:hover {
+	border-bottom-color: #666;
+}
+
+.tab.current {
+	border-bottom-color: #4399F0;
+}
+
+.tab .name {
+	padding-left: 4px;
+	float: left;
+}
+
+.tab .closeTab, .tab .editTab {
+	opacity: 0;
+	visibility: hidden;
+	float: right;
+	font-size: .8em;
+	padding: 2px 2px 0 4px;
+
+	transition: opacity .15s ease-out;
+	-moz-transition: opacity .15s ease-out;
+	-webkit-transition: opacity .15s ease-out;
+	-o-transition: opacity .15s ease-out;
+}
+
+.tab:hover .closeTab, .tab.current:hover .editTab {
+	opacity: 1;
+	visibility: visible;
+}
+
+#guide td:first-child {
+	width: 30px;
+}
+
+#guide div {
+	width: 20px;
+}
+
+.guide-stable {
+	border-bottom: 1px solid #38d;
+}
+
+.guide-eol {
+	border-bottom: 1px dashed #38d;
+}
+
+.guide-destab {
+	border-bottom: 1px solid #F5B544;
+}
+
+.guide-critical {
+	border-bottom: 1px solid #FF4747;
+}
+
+.guide-frigate {
+	border-bottom: 1px solid #50D25A;
+}
+
+[data-icon="user"] + .badge {
+	position: absolute;
+	top: -5px;
+	right: -12px;
+}
+
+td.google-visualization-orgchart-linenode[data-signatureid] {
+	cursor: pointer;
+}
+
+#chainGrid {
+	position: absolute;
+	width: 100%;
+	z-index: -10;
+	margin-left: -3px;
+	color: #777;
+}
+
+#chainGrid .top td {
+	height: 18px;
+}
+
+#chainGrid .line td {
+	height: 28px;
+	border-bottom: 1px solid #333;
+}
+
+#chainGrid .space td {
+	height: 13px;
+}
+
+#chainGrid .red td {
+	border-bottom-color: #FF4747;
+	color: #FF4747;
+}
+
+#chainGrid .yellow td {
+	border-bottom-color: #F5B544;
+	color: #F5B544;
+}
+
+#chainGrid .green td {
+	border-bottom-color: #50D25A;
+	color: #50D25A;
+}
+
+#chainTabs {
+	padding-right: 10px;
+}

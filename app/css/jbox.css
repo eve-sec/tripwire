@@ -1,0 +1,84 @@
+.validation-tooltip .jBox-container, .validation-tooltip .jBox-pointer:after {
+	background: #D93627;
+	color: white;
+	border: none;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 3px;
+}
+
+.jBox-container {
+	background: #333;
+	color: #CCC;
+	min-height: 20px;
+}
+
+.jBox-content {
+	padding: 4px 5px;
+}
+
+/* Pointer */
+
+.jBox-pointer-right { right: 2px; }
+
+.jBox-pointer:after {
+	background: #333;
+}
+
+/* jBox Notice */
+
+.jBox-Notice .jBox-container {
+    border-radius: 3px;
+	box-shadow: 0 0 3px #000;
+
+	color: #fff;
+	font-size: 1.1em;
+	text-shadow: 0 -1px 0 #000;
+	background: #333;
+	background-image: linear-gradient(to bottom, #444, #222);
+}
+
+.jBox-Notice .jBox-content {
+	padding: 6px 10px;
+}
+
+.jBox-Notice .jBox-title {
+	padding: 8px 20px 0;
+}
+
+.jBox-Notice-color .jBox-container {
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+}
+
+.jBox-Notice-gray .jBox-container {
+	color: #666;
+	text-shadow: 0 1px 0 #fff;
+	background: #f4f4f4;
+	background-image: linear-gradient(to bottom, #fafafa, #f0f0f0);
+}
+
+.jBox-Notice-red .jBox-container {
+	background: #b02222;
+	background-image: linear-gradient(to bottom, #ee2222, #b02222);
+}
+
+.jBox-Notice-green .jBox-container {
+	background: #70a800;
+	background-image: linear-gradient(to bottom, #95cc2a, #70a800);
+}
+
+.jBox-Notice-blue .jBox-container {
+	background: #2b91d9;
+	background-image: linear-gradient(to bottom, #5abaff, #2b91d9);
+}
+
+.jBox-Notice-yellow .jBox-container {
+	color: #744700;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .6);
+	background: #ffb11f;
+	background-image: linear-gradient(to bottom, #ffd665, #ffb11f);
+}
+
+.jBox-Notice-yellow .jBox-container a {
+	color: #999;
+}

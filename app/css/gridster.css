@@ -1,0 +1,99 @@
+.gridster > ul {
+	//background: rgba(0, 0, 0, .8);
+	list-style-type: none;
+}
+
+.gridster > li {
+    overflow: hidden;
+}
+
+.controls i {
+	cursor: pointer;
+}
+
+.gridster li div.content {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	bottom: 5px;
+	left: 5px;
+
+	overflow: auto;
+}
+
+.gridster li .controls + .content {
+	top: 18px;
+}
+
+.gridster {
+	visibility: hidden;
+    margin: 0 auto;
+    padding: 50px 0 140px 0;
+
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+    -webkit-transition: opacity .6s;
+    -moz-transition: opacity .6s;
+    -o-transition: opacity .6s;
+    -ms-transition: opacity .6s;
+    transition: opacity .6s;
+}
+
+.gridster > * {
+    margin: 0 auto;
+}
+
+.gridster-transition {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	-webkit-transition: height .4s, width .4s;
+    -moz-transition: height .4s, width .4s;
+    -o-transition: height .4s, width .4s;
+    -ms-transition: height .4s, width .4s;
+    transition: height .4s, width .4s;
+}
+
+.gridster .gs-w {
+    z-index: 2;
+    position: absolute;
+}
+
+.gridster .gs-w {
+    //background: rgba(120, 120, 120, .1);
+    background: rgba(0, 0, 0, .6);
+}
+
+.gridster .gs-w:hover .grid-resize-both {
+	opacity: 1;
+}
+
+.gridster .grid-resize {
+	position: absolute;
+	z-index: 1;
+}
+
+.gridster .grid-resize-both {
+    width: 30px;
+    height: 30px;
+    bottom: -18px;
+    right: -18px;
+    cursor: se-resize;
+    z-index: 20;
+    opacity: 0;
+    color: #bbb;
+}
+
+.gridster .gs-resize-handle-both:before {
+	content: "\e018";
+}
+
+.gridster .player {
+    background: rgba(192, 192, 192, .3);
+}
+
+.gridster .preview-holder {
+    border: none;
+    background: rgba(255, 0, 0, .3);
+}

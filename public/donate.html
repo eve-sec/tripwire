@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Donate redirect</title>
+	<link rel="shortcut icon" href="//static.eve-apps.com/favicon.png">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Quicksand:400,700,300">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background: url('https://static.eve-apps.com/images/landing/dark-bg.png') repeat top left;
+			font-family: "Quicksand","Helvetica Neue",helvetica,sans-serif;
+			font-size: 14px;
+			color: #aaa;
+		}
+
+		h1 {
+			font-weight: normal;
+			font-size: 10em;
+			letter-spacing: -0.05em;
+			line-height: 0.7;
+		}
+
+		#content {
+			margin-top: 10%;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="content">
+		<form id="donate_form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_self">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+			<h2>If your not automatically redirected, click the link below</h2>
+			<a href="#" onclick="document.getElementById('donate_form').submit();">Donation redirect</a>
+		</form>
+	</div>
+	<script type="text/javascript">
+		document.getElementById('donate_form').submit();
+	</script>
+</body>
+</html>

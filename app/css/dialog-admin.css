@@ -1,0 +1,72 @@
+#dialog-admin .menu {
+	width: 100px;
+	height: 100%;
+	float: left;
+}
+
+#dialog-admin .window {
+	height: 100%;
+	margin-left: 100px;
+	overflow: auto;
+}
+
+#dialog-admin .menu li {
+	list-style-type: none;
+}
+
+#dialog-admin .menu li a {
+	color: #666;
+}
+
+#dialog-admin .menu li a:focus {
+	outline: none;
+}
+
+#dialog-admin .menu li.active a {
+	color: orange;
+}
+
+#dialog-admin #userTable th {
+	text-align: left;
+	border-bottom: 1px solid #333;
+}
+
+#dialog-admin #userTable tr:nth-child(even) td {
+	border-bottom: 1px solid #aaa;
+}
+
+#dialog-admin .tablesorter .tablesorter-header i:before, #dialog-admin .tablesorter .sortable i:before {
+	float: none;
+}
+
+#dialog-admin .tablesorter .headerSortUp,
+#dialog-admin .tablesorter .tablesorter-headerSortUp,
+#dialog-admin .tablesorter .tablesorter-headerAsc {
+	color: orange;
+}
+
+#dialog-admin .tablesorter .headerSortDown,
+#dialog-admin .tablesorter .tablesorter-headerSortDown,
+#dialog-admin .tablesorter .tablesorter-headerDesc {
+	color: orange;
+}
+
+div.ui-dialog[aria-describedby='dialog-admin'] .menu {
+	margin-right: 6px;
+	border-right: 1px solid #aaa;
+}
+
+div.ui-dialog[aria-describedby='dialog-admin'] .window [data-window] {
+	height: 100%;
+}
+
+div.ui-dialog[aria-describedby='dialog-admin'] .window table tbody tr:nth-child(even) td {
+	border-bottom: 1px solid #999;
+}
+
+div.ui-dialog[aria-describedby='dialog-admin'] .ui-dialog-traypane {
+	margin-left: 120px;
+	margin-top: 8px;
+	font-size: 16px;
+	color: #333;
+}
